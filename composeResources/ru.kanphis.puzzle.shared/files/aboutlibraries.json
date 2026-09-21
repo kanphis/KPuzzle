@@ -661,10 +661,10 @@
         },
         {
             "uniqueId": "androidx.datastore:datastore-core",
-            "artifactVersion": "1.3.0-alpha10",
+            "artifactVersion": "1.3.0-alpha11",
             "name": "DataStore Core",
             "description": "Android DataStore Core - contains the underlying store used by each serialization method",
-            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha10",
+            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha11",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -678,10 +678,10 @@
         },
         {
             "uniqueId": "androidx.datastore:datastore-core-okio",
-            "artifactVersion": "1.3.0-alpha10",
+            "artifactVersion": "1.3.0-alpha11",
             "name": "DataStore Core Okio",
             "description": "Android DataStore Core Okio- contains APIs to use datastore-core in multiplatform via okio",
-            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha10",
+            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha11",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -695,10 +695,10 @@
         },
         {
             "uniqueId": "androidx.datastore:datastore-preferences-core",
-            "artifactVersion": "1.3.0-alpha10",
+            "artifactVersion": "1.3.0-alpha11",
             "name": "Preferences DataStore Core",
             "description": "Android Preferences DataStore without the Android Dependencies",
-            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha10",
+            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha11",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -712,10 +712,10 @@
         },
         {
             "uniqueId": "androidx.datastore:datastore-preferences-external-protobuf",
-            "artifactVersion": "1.3.0-alpha10",
+            "artifactVersion": "1.3.0-alpha11",
             "name": "Preferences External Protobuf",
             "description": "Repackaged proto-lite dependency for use by datastore preferences",
-            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha10",
+            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha11",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -729,10 +729,10 @@
         },
         {
             "uniqueId": "androidx.datastore:datastore-preferences-proto",
-            "artifactVersion": "1.3.0-alpha10",
+            "artifactVersion": "1.3.0-alpha11",
             "name": "Preferences DataStore Proto",
             "description": "Jarjar the generated proto for use by datastore-preferences.",
-            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha10",
+            "website": "https://developer.android.com/jetpack/androidx/releases/datastore#1.3.0-alpha11",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1702,7 +1702,7 @@
         },
         {
             "uniqueId": "io.github.vinceglb:filekit-core",
-            "artifactVersion": "0.15.0",
+            "artifactVersion": "0.16.0",
             "name": "FileKit",
             "description": "Files, Media, Folder Picker and File saver library for Kotlin Multiplatform and Compose Multiplatform",
             "website": "https://github.com/vinceglb/FileKit",
@@ -1717,7 +1717,7 @@
         },
         {
             "uniqueId": "io.github.vinceglb:filekit-dialogs",
-            "artifactVersion": "0.15.0",
+            "artifactVersion": "0.16.0",
             "name": "FileKit",
             "description": "Files, Media, Folder Picker and File saver library for Kotlin Multiplatform and Compose Multiplatform",
             "website": "https://github.com/vinceglb/FileKit",
@@ -1732,7 +1732,7 @@
         },
         {
             "uniqueId": "io.github.vinceglb:filekit-dialogs-compose",
-            "artifactVersion": "0.15.0",
+            "artifactVersion": "0.16.0",
             "name": "FileKit",
             "description": "Files, Media, Folder Picker and File saver library for Kotlin Multiplatform and Compose Multiplatform",
             "website": "https://github.com/vinceglb/FileKit",
@@ -2567,7 +2567,7 @@
         },
         {
             "uniqueId": "org.jetbrains.kotlinx:kotlinx-collections-immutable",
-            "artifactVersion": "0.5.1",
+            "artifactVersion": "0.5.2",
             "name": "kotlinx-collections-immutable",
             "description": "Kotlin Immutable Collections multiplatform library",
             "website": "https://github.com/Kotlin/kotlinx.collections.immutable",

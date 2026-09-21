@@ -1,9 +1,9 @@
 # KPuzzle
 
-Twelve classic logic puzzles in one app — **Sudoku, Hitori, Kakuro, Suguru,
-Slitherlink, Masyu, Hashiwokakero, Nurikabe, Akari, Shikaku, Nonograms, and
-Minesweeper** — built with Kotlin Multiplatform and Compose, running on
-Android, iOS, desktop, and the web.
+Thirteen classic logic puzzles in one app — **Sudoku, Hitori, Kakuro, Suguru,
+Takuzu, Slitherlink, Masyu, Hashiwokakero, Nurikabe, Akari, Shikaku,
+Nonograms, and Minesweeper** — built with Kotlin Multiplatform and Compose,
+running on Android, iOS, desktop, and the web.
 
 **Play in the browser:** https://kanphis.github.io/KPuzzle-web/
 
