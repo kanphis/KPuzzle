@@ -1,7 +1,7 @@
 {
     "name": "KPuzzle — Logic Puzzles",
     "short_name": "KPuzzle",
-    "description": "12 classic logic puzzles with step-by-step hints — offline, no ads.",
+    "description": "Classic logic puzzles with step-by-step hints — offline, no ads.",
     "id": "kanphis-kpuzzle",
     "start_url": "./",
     "scope": "./",

@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- The board: the ink box cut into three regions by partial walls over
+         the siblings' 5.4 cell lattice — two dominoes and a pentomino, an
+         irregular region map mid-solve. -->
+    <path
+        android:pathData="M3.9,3.9H20.1V20.1H3.9Z M9.3,3.9V14.7 M3.9,14.7H9.3 M9.3,9.3H20.1"
+        android:strokeColor="#000000"
+        android:strokeWidth="1.25"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <!-- Two five-point stars centred in cells of different regions and
+         different rows and columns — never touching. Their outer diameter is
+         ~0.7 of the cell, the board's placed-mark proportion, and the
+         round-joined stroke keeps the points soft the way the boards round
+         their filled marks. -->
+    <path
+        android:fillColor="#000000"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.35"
+        android:strokeLineJoin="round"
+        android:pathData="M6.6,4.7L7.08,5.94L8.41,6.01L7.38,6.85L7.72,8.14L6.6,7.42L5.48,8.14L5.82,6.85L4.79,6.01L6.12,5.94Z" />
+    <path
+        android:fillColor="#000000"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.35"
+        android:strokeLineJoin="round"
+        android:pathData="M17.4,15.5L17.88,16.74L19.21,16.81L18.18,17.65L18.52,18.94L17.4,18.22L16.28,18.94L16.62,17.65L15.59,16.81L16.92,16.74Z" />
+</vector>

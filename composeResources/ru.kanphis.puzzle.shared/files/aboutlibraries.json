@@ -281,45 +281,11 @@
             ]
         },
         {
-            "uniqueId": "androidx.compose.material:material",
-            "artifactVersion": "1.12.0",
-            "name": "Compose Material Components",
-            "description": "Compose Material Design Components library",
-            "website": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.12.0",
-            "organization": {
-                "name": "The Android Open Source Project"
-            },
-            "scm": {
-                "connection": "scm:git:https://android.googlesource.com/platform/frameworks/support",
-                "url": "https://cs.android.com/androidx/platform/frameworks/support"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "androidx.compose.material:material-navigation",
-            "artifactVersion": "1.12.0",
-            "name": "Compose Material Navigation",
-            "description": "Compose Material integration with Navigation",
-            "website": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.12.0",
-            "organization": {
-                "name": "The Android Open Source Project"
-            },
-            "scm": {
-                "connection": "scm:git:https://android.googlesource.com/platform/frameworks/support",
-                "url": "https://cs.android.com/androidx/platform/frameworks/support"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
             "uniqueId": "androidx.compose.material:material-ripple",
-            "artifactVersion": "1.12.0",
+            "artifactVersion": "1.12.0-beta01",
             "name": "Compose Material Ripple",
             "description": "Material ripple used to build interactive components",
-            "website": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.12.0",
+            "website": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.12.0-beta01",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1107,6 +1073,23 @@
             ]
         },
         {
+            "uniqueId": "androidx.lifecycle:lifecycle-viewmodel-navigation3",
+            "artifactVersion": "2.11.0",
+            "name": "Androidx Lifecycle Navigation3 ViewModel",
+            "description": "Provides the ViewModel wrapper for nav3.",
+            "website": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0",
+            "organization": {
+                "name": "The Android Open Source Project"
+            },
+            "scm": {
+                "connection": "scm:git:https://android.googlesource.com/platform/frameworks/support",
+                "url": "https://cs.android.com/androidx/platform/frameworks/support"
+            },
+            "licenses": [
+                "Apache-2.0"
+            ]
+        },
+        {
             "uniqueId": "androidx.lifecycle:lifecycle-viewmodel-savedstate",
             "artifactVersion": "2.11.0",
             "name": "Lifecycle ViewModel with SavedState",
@@ -1138,11 +1121,11 @@
             ]
         },
         {
-            "uniqueId": "androidx.navigation:navigation-common",
-            "artifactVersion": "2.9.7",
-            "name": "Navigation Common",
-            "description": "Android Navigation-Common",
-            "website": "https://developer.android.com/jetpack/androidx/releases/navigation#2.9.7",
+            "uniqueId": "androidx.navigation3:navigation3-runtime",
+            "artifactVersion": "1.1.7",
+            "name": "Androidx Navigation 3 Runtime",
+            "description": "Provides the building blocks for a Compose first Navigation solution that easily supports extensions.",
+            "website": "https://developer.android.com/jetpack/androidx/releases/navigation3#1.1.7",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1155,28 +1138,11 @@
             ]
         },
         {
-            "uniqueId": "androidx.navigation:navigation-compose",
-            "artifactVersion": "2.9.7",
-            "name": "Compose Navigation",
-            "description": "Compose integration with Navigation",
-            "website": "https://developer.android.com/jetpack/androidx/releases/navigation#2.9.7",
-            "organization": {
-                "name": "The Android Open Source Project"
-            },
-            "scm": {
-                "connection": "scm:git:https://android.googlesource.com/platform/frameworks/support",
-                "url": "https://cs.android.com/androidx/platform/frameworks/support"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "androidx.navigation:navigation-runtime",
-            "artifactVersion": "2.9.7",
-            "name": "Navigation Runtime",
-            "description": "Android Navigation-Runtime",
-            "website": "https://developer.android.com/jetpack/androidx/releases/navigation#2.9.7",
+            "uniqueId": "androidx.navigation3:navigation3-ui",
+            "artifactVersion": "1.1.7",
+            "name": "Androidx Navigation 3 UI",
+            "description": "Provides a Navigation3 display that uses the building blocks from runtime to create a higher level solution.",
+            "website": "https://developer.android.com/jetpack/androidx/releases/navigation3#1.1.7",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1190,10 +1156,10 @@
         },
         {
             "uniqueId": "androidx.navigationevent:navigationevent",
-            "artifactVersion": "1.0.0",
+            "artifactVersion": "1.1.2",
             "name": "Navigation Event",
             "description": "Provides APIs to easily intercept platform navigation events, including swipes and clicks, to provide a consistent API surface for handling these events.",
-            "website": "https://developer.android.com/jetpack/androidx/releases/navigationevent#1.0.0",
+            "website": "https://developer.android.com/jetpack/androidx/releases/navigationevent#1.1.2",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1207,10 +1173,10 @@
         },
         {
             "uniqueId": "androidx.navigationevent:navigationevent-compose",
-            "artifactVersion": "1.0.0",
+            "artifactVersion": "1.1.2",
             "name": "NavigationEvent Compose",
             "description": "Compose integration with NavigationEvent",
-            "website": "https://developer.android.com/jetpack/androidx/releases/navigationevent#1.0.0",
+            "website": "https://developer.android.com/jetpack/androidx/releases/navigationevent#1.1.2",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1323,10 +1289,10 @@
         },
         {
             "uniqueId": "androidx.tracing:tracing",
-            "artifactVersion": "2.0.1",
+            "artifactVersion": "2.0.2",
             "name": "Tracing",
             "description": "Android Tracing",
-            "website": "https://developer.android.com/jetpack/androidx/releases/tracing#2.0.1",
+            "website": "https://developer.android.com/jetpack/androidx/releases/tracing#2.0.2",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1340,10 +1306,10 @@
         },
         {
             "uniqueId": "androidx.tracing:tracing-ktx",
-            "artifactVersion": "2.0.1",
+            "artifactVersion": "2.0.2",
             "name": "Tracing Kotlin Extensions",
             "description": "Android Tracing",
-            "website": "https://developer.android.com/jetpack/androidx/releases/tracing#2.0.1",
+            "website": "https://developer.android.com/jetpack/androidx/releases/tracing#2.0.2",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1657,7 +1623,7 @@
         },
         {
             "uniqueId": "dev.chrisbanes.haze:haze",
-            "artifactVersion": "2.0.0-beta03",
+            "artifactVersion": "2.0.0-rc02",
             "name": "Haze",
             "description": "Haze",
             "website": "https://github.com/chrisbanes/haze/",
@@ -1672,7 +1638,7 @@
         },
         {
             "uniqueId": "dev.chrisbanes.haze:haze-blur",
-            "artifactVersion": "2.0.0-beta03",
+            "artifactVersion": "2.0.0-rc02",
             "name": "Haze Blur",
             "description": "Haze",
             "website": "https://github.com/chrisbanes/haze/",
@@ -1687,7 +1653,7 @@
         },
         {
             "uniqueId": "dev.chrisbanes.haze:haze-utils",
-            "artifactVersion": "2.0.0-beta03",
+            "artifactVersion": "2.0.0-rc02",
             "name": "Haze Utils",
             "description": "Common utilities for the Haze library",
             "website": "https://github.com/chrisbanes/haze/",
@@ -1937,6 +1903,21 @@
             ]
         },
         {
+            "uniqueId": "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-navigation3",
+            "artifactVersion": "2.11.0",
+            "name": "Androidx Lifecycle Navigation3 ViewModel",
+            "description": "Provides the ViewModel wrapper for nav3.",
+            "website": "https://github.com/JetBrains/compose-multiplatform",
+            "scm": {
+                "connection": "scm:git:https://github.com/JetBrains/compose-multiplatform.git",
+                "developerConnection": "scm:git:https://github.com/JetBrains/compose-multiplatform.git",
+                "url": "https://github.com/JetBrains/compose-multiplatform"
+            },
+            "licenses": [
+                "Apache-2.0"
+            ]
+        },
+        {
             "uniqueId": "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-savedstate",
             "artifactVersion": "2.11.0",
             "name": "Lifecycle ViewModel with SavedState",
@@ -1952,45 +1933,15 @@
             ]
         },
         {
-            "uniqueId": "org.jetbrains.androidx.navigation:navigation-common",
-            "artifactVersion": "2.9.2",
-            "name": "Navigation Common",
-            "description": "Android Navigation-Common",
-            "website": "https://github.com/JetBrains/compose-jb",
+            "uniqueId": "org.jetbrains.androidx.navigation3:navigation3-ui",
+            "artifactVersion": "1.1.2",
+            "name": "Androidx Navigation 3 UI",
+            "description": "Provides a Navigation3 display that uses the building blocks from runtime to create a higher level solution.",
+            "website": "https://github.com/JetBrains/compose-multiplatform",
             "scm": {
-                "connection": "scm:git:https://github.com/JetBrains/compose-jb.git",
-                "developerConnection": "scm:git:https://github.com/JetBrains/compose-jb.git",
-                "url": "https://github.com/JetBrains/compose-jb"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "org.jetbrains.androidx.navigation:navigation-compose",
-            "artifactVersion": "2.9.2",
-            "name": "Compose Navigation",
-            "description": "Compose integration with Navigation",
-            "website": "https://github.com/JetBrains/compose-jb",
-            "scm": {
-                "connection": "scm:git:https://github.com/JetBrains/compose-jb.git",
-                "developerConnection": "scm:git:https://github.com/JetBrains/compose-jb.git",
-                "url": "https://github.com/JetBrains/compose-jb"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "org.jetbrains.androidx.navigation:navigation-runtime",
-            "artifactVersion": "2.9.2",
-            "name": "Navigation Runtime",
-            "description": "Android Navigation-Runtime",
-            "website": "https://github.com/JetBrains/compose-jb",
-            "scm": {
-                "connection": "scm:git:https://github.com/JetBrains/compose-jb.git",
-                "developerConnection": "scm:git:https://github.com/JetBrains/compose-jb.git",
-                "url": "https://github.com/JetBrains/compose-jb"
+                "connection": "scm:git:https://github.com/JetBrains/compose-multiplatform.git",
+                "developerConnection": "scm:git:https://github.com/JetBrains/compose-multiplatform.git",
+                "url": "https://github.com/JetBrains/compose-multiplatform"
             },
             "licenses": [
                 "Apache-2.0"
@@ -2013,7 +1964,7 @@
         },
         {
             "uniqueId": "org.jetbrains.androidx.savedstate:savedstate",
-            "artifactVersion": "1.3.6",
+            "artifactVersion": "1.4.0",
             "name": "Saved State",
             "description": "Android Lifecycle Saved State",
             "website": "https://github.com/JetBrains/compose-jb",
@@ -2028,7 +1979,7 @@
         },
         {
             "uniqueId": "org.jetbrains.androidx.savedstate:savedstate-compose",
-            "artifactVersion": "1.3.6",
+            "artifactVersion": "1.4.0",
             "name": "Saved State Compose",
             "description": "Compose integration with Saved State",
             "website": "https://github.com/JetBrains/compose-jb",
@@ -2285,23 +2236,8 @@
             ]
         },
         {
-            "uniqueId": "org.jetbrains.compose.material:material-navigation",
-            "artifactVersion": "1.12.0",
-            "name": "Compose Material Navigation",
-            "description": "Compose Material integration with Navigation",
-            "website": "https://github.com/JetBrains/compose-multiplatform",
-            "scm": {
-                "connection": "scm:git:https://github.com/JetBrains/compose-multiplatform.git",
-                "developerConnection": "scm:git:https://github.com/JetBrains/compose-multiplatform.git",
-                "url": "https://github.com/JetBrains/compose-multiplatform"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
             "uniqueId": "org.jetbrains.compose.material:material-ripple",
-            "artifactVersion": "1.12.0",
+            "artifactVersion": "1.12.0-beta01",
             "name": "Compose Material Ripple",
             "description": "Material ripple used to build interactive components",
             "website": "https://github.com/JetBrains/compose-multiplatform",
