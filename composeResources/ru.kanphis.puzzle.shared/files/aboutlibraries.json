@@ -1487,6 +1487,21 @@
             ]
         },
         {
+            "uniqueId": "com.github.ajalt.colormath:colormath",
+            "artifactVersion": "3.6.1",
+            "name": "Colormath",
+            "description": "Multiplatform color space conversions for Kotlin",
+            "website": "https://github.com/ajalt/colormath/",
+            "scm": {
+                "connection": "scm:git:git://github.com/ajalt/colormath.git",
+                "developerConnection": "scm:git:ssh://git@github.com/ajalt/colormath.git",
+                "url": "https://github.com/ajalt/colormath/"
+            },
+            "licenses": [
+                "MIT"
+            ]
+        },
+        {
             "uniqueId": "com.github.hypfvieh:dbus-java-core",
             "artifactVersion": "5.2.0",
             "name": "dbus-java-core",
@@ -1517,6 +1532,21 @@
             ]
         },
         {
+            "uniqueId": "com.github.skydoves:colorpicker-compose",
+            "artifactVersion": "1.3.0",
+            "name": "colorpicker-compose",
+            "description": "Jetpack Compose color picker for getting colors from any images by tapping on the desired color.",
+            "website": "https://github.com/skydoves/colorpicker-compose/",
+            "scm": {
+                "connection": "scm:git:git://github.com/skydoves/colorpicker-compose.git",
+                "developerConnection": "scm:git:git://github.com/skydoves/colorpicker-compose.git",
+                "url": "https://github.com/skydoves/colorpicker-compose/"
+            },
+            "licenses": [
+                "Apache-2.0"
+            ]
+        },
+        {
             "uniqueId": "com.google.guava:listenablefuture",
             "artifactVersion": "1.0",
             "name": "Guava ListenableFuture only",
@@ -1529,6 +1559,36 @@
             },
             "licenses": [
                 "Apache-2.0"
+            ]
+        },
+        {
+            "uniqueId": "com.materialkolor:material-color-utilities",
+            "artifactVersion": "5.0.1",
+            "name": "MaterialKolor",
+            "description": "Material You dynamic color for Compose Multiplatform",
+            "website": "https://github.com/jordond/materialkolor",
+            "scm": {
+                "connection": "scm:git:https://github.com/jordond/materialkolor.git",
+                "developerConnection": "scm:git:git@github.com:jordond/materialkolor.git",
+                "url": "https://github.com/jordond/materialkolor"
+            },
+            "licenses": [
+                "MIT"
+            ]
+        },
+        {
+            "uniqueId": "com.materialkolor:material-kolor",
+            "artifactVersion": "5.0.1",
+            "name": "MaterialKolor",
+            "description": "Material You dynamic color for Compose Multiplatform",
+            "website": "https://github.com/jordond/materialkolor",
+            "scm": {
+                "connection": "scm:git:https://github.com/jordond/materialkolor.git",
+                "developerConnection": "scm:git:git@github.com:jordond/materialkolor.git",
+                "url": "https://github.com/jordond/materialkolor"
+            },
+            "licenses": [
+                "MIT"
             ]
         },
         {
@@ -1661,6 +1721,21 @@
                 "connection": "scm:git:git://github.com/chrisbanes/haze.git",
                 "developerConnection": "scm:git:git://github.com/chrisbanes/haze.git",
                 "url": "https://github.com/chrisbanes/haze/"
+            },
+            "licenses": [
+                "Apache-2.0"
+            ]
+        },
+        {
+            "uniqueId": "dev.drewhamilton.poko:poko-annotations",
+            "artifactVersion": "0.23.1",
+            "name": "Poko Annotations",
+            "description": "A Kotlin compiler plugin for generating equals, hashCode, and toString for plain old Kotlin objects.",
+            "website": "https://github.com/drewhamilton/Poko",
+            "scm": {
+                "connection": "scm:git:github.com/drewhamilton/Poko.git",
+                "developerConnection": "scm:git:ssh://github.com/drewhamilton/Poko.git",
+                "url": "https://github.com/drewhamilton/Poko/tree/main"
             },
             "licenses": [
                 "Apache-2.0"
