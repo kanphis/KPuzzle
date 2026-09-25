@@ -90,6 +90,7 @@ string|app_settings_palette_default|RGVmYXVsdA==
 string|app_settings_palette_description|Q29sb3IgcGFsZXR0ZSBvZiB0aGUgYXBw
 string|app_settings_palette_dynamic|RHluYW1pYw==
 string|app_settings_palette_forest|Rm9yZXN0
+string|app_settings_palette_graphite|R3JhcGhpdGU=
 string|app_settings_palette_lavender|TGF2ZW5kZXI=
 string|app_settings_palette_ocean|T2NlYW4=
 string|app_settings_palette_plum|UGx1bQ==
@@ -101,7 +102,6 @@ string|app_settings_section_more|TW9yZQ==
 string|app_settings_show_generator_description|U2hvdyB0aGUgc2VlZCBhbmQgcmVxdWVzdGVkIGRpZmZpY3VsdHkgb24gdGhlIGNvbnRpbnVlIGNhcmQgYW5kIHRoZSBzZWVkIGZpZWxkIG9uIHRoZSBuZXctZ2FtZSBjYXJk
 string|app_settings_show_generator|U2hvdyBnZW5lcmF0b3Igc3R1ZmY=
 string|app_settings_style_description|SG93IHRoZSBwYWxldHRlIHVuZm9sZHMgZnJvbSBpdHMgc2VlZCBjb2xvcg==
-string|app_settings_style_expressive|RXhwcmVzc2l2ZQ==
 string|app_settings_style_neutral|TmV1dHJhbA==
 string|app_settings_style_tonal_spot|VG9uYWwgU3BvdA==
 string|app_settings_style_vibrant|VmlicmFudA==
