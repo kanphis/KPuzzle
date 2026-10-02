@@ -1,8 +1,9 @@
 # KPuzzle
 
 Classic logic puzzles in one app — **Akari, Battleships, Fillomino,
-Hashiwokakero, Hitori, Kakuro, Masyu, Minesweeper, Nonograms, Nurikabe,
-Shikaku, Slitherlink, Star Battle, Sudoku, Suguru, and Takuzu** — built with
+Hashiwokakero, Hitori, Kakurasu, Kakuro, Masyu, Minesweeper, Mosaic,
+Nonograms, Number Paths, Nurikabe, Shikaku, Slitherlink, Star Battle,
+Sudoku, Suguru, Takuzu, and Tents** — built with
 Kotlin Multiplatform and Compose, running on Android, iOS, desktop, and the
 web.
 
