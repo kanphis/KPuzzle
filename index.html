@@ -15,6 +15,35 @@
                 : './') +
             '">');
     </script>
+    <script type="application/javascript">
+        if ('serviceWorker' in navigator) {
+            // Attached synchronously, before webApp.js starts downloading: a
+            // warm-cache install can claim the page within this load, and the
+            // claim must reload it — an old bundle running against the new
+            // precache fetches new .cvr strings with old code. The controller
+            // check keeps the very first visit (whose own claim fires
+            // controllerchange too) from reloading.
+            if (navigator.serviceWorker.controller) {
+                var swReloaded = false;
+                navigator.serviceWorker.addEventListener('controllerchange',
+                    function () {
+                        if (!swReloaded) {
+                            swReloaded = true;
+                            window.location.reload();
+                        }
+                    });
+            }
+            window.addEventListener('load', function () {
+                // sw.js is generated at publish time (scripts/make_sw.py) and
+                // does not exist on dev servers — swallow that rejection.
+                // updateViaCache:'none' revalidates sw.js on every navigation
+                // instead of trusting Pages' max-age=600, so a release is
+                // picked up right after the deploy, not ten minutes later.
+                navigator.serviceWorker.register('sw.js',
+                    {updateViaCache: 'none'}).catch(function () {});
+            });
+        }
+    </script>
     <title>KPuzzle</title>
     <meta name="description" content="Play classic logic puzzles — sudoku, nonograms, minesweeper, hitori, kakuro and more — free in your browser. Step-by-step hints, offline play, no ads.">
     <link rel="canonical" href="https://kanphis.github.io/KPuzzle/">
@@ -162,28 +191,6 @@
 <script type="application/javascript" src="webApp.js"></script>
 <script type="application/javascript">
     webApp();
-</script>
-<script type="application/javascript">
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            // sw.js is generated at publish time (scripts/make_sw.py) and
-            // does not exist on dev servers — swallow that rejection.
-            navigator.serviceWorker.register('sw.js').catch(function () {});
-            // A newly published worker claims the page mid-session; reload
-            // once so the old bundle never runs against the new cache. The
-            // controller check keeps the very first visit — whose own claim
-            // fires controllerchange too — from reloading.
-            if (navigator.serviceWorker.controller) {
-                var reloaded = false;
-                navigator.serviceWorker.addEventListener('controllerchange', function () {
-                    if (!reloaded) {
-                        reloaded = true;
-                        window.location.reload();
-                    }
-                });
-            }
-        });
-    }
 </script>
 </body>
 </html>
