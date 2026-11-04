@@ -5,15 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="application/javascript">
         // Asset URLs are relative, so a deep path served by the 404 fallback
-        // (https://.../KPuzzle/sudoku) must resolve them against the shell's
-        // directory, not the deep path. The dev server serves at the root and
-        // keeps document-relative './'. Match the base exactly: /KPuzzle-web
-        // is a different (redirect-only) site and must not adopt the shell.
+        // (https://.../KPuzzle/sudoku/game) must resolve them against the
+        // shell's directory, not the deep path: a document-relative './' on a
+        // two-segment path would look for /KPuzzle/sudoku/webApp.js. The dev
+        // server also serves deep paths since it gained the history fallback,
+        // and it hosts everything at the root, so '/' is correct for every
+        // non-shell host. Match the base exactly: /KPuzzle-web is a different
+        // (redirect-only) site and must not adopt the shell.
         document.write('<base href="' +
             (location.pathname.indexOf('/KPuzzle/') === 0 || location.pathname === '/KPuzzle'
                 ? '/KPuzzle/'
-                : './') +
+                : '/') +
             '">');
+    </script>
+    <script type="application/javascript">
+        // The in-app banner bridge (webApp's WebBanners): flags the Kotlin side
+        // reads at boot plus live callbacks, and the two actions. Every flag
+        // is set here first — the events can fire before the app boots.
+        window.__kpuzzleInstallAvailable = false;
+        window.__kpuzzleUpdateReadyFlag = false;
+        window.addEventListener('beforeinstallprompt', function (e) {
+            // The default mini-infobar is suppressed; the app shows its own.
+            e.preventDefault();
+            window.__kpuzzleInstallPrompt = e;
+            window.__kpuzzleInstallAvailable = true;
+            if (window.__kpuzzleOnInstallAvailable) window.__kpuzzleOnInstallAvailable();
+        });
+        window.__kpuzzlePromptInstall = function () {
+            var e = window.__kpuzzleInstallPrompt;
+            if (e) {
+                e.prompt();
+                window.__kpuzzleInstallPrompt = null;
+                window.__kpuzzleInstallAvailable = false;
+            }
+        };
+        window.__kpuzzleApplyUpdate = function () {
+            window.location.reload();
+        };
+        function __kpuzzleSetOffline(offline) {
+            window.__kpuzzleOffline = offline;
+            if (window.__kpuzzleOnOffline) window.__kpuzzleOnOffline(offline);
+        }
+        window.addEventListener('online', function () { __kpuzzleSetOffline(false); });
+        window.addEventListener('offline', function () { __kpuzzleSetOffline(true); });
+        __kpuzzleSetOffline(!navigator.onLine);
     </script>
     <script type="application/javascript">
         if ('serviceWorker' in navigator) {
@@ -40,7 +75,22 @@
                 // instead of trusting Pages' max-age=600, so a release is
                 // picked up right after the deploy, not ten minutes later.
                 navigator.serviceWorker.register('sw.js',
-                    {updateViaCache: 'none'}).catch(function () {});
+                    {updateViaCache: 'none'}).then(function (reg) {
+                    // A new worker finished installing while the old one still
+                    // controls the page — the release is ready, the app shows
+                    // its refresh banner (no auto-reload: the player may be
+                    // mid-game; the reload fires only from the banner).
+                    reg.addEventListener('updatefound', function () {
+                        var worker = reg.installing;
+                        if (!worker) return;
+                        worker.addEventListener('statechange', function () {
+                            if (worker.state === 'installed' && navigator.serviceWorker.controller) {
+                                window.__kpuzzleUpdateReadyFlag = true;
+                                if (window.__kpuzzleOnUpdateReady) window.__kpuzzleOnUpdateReady();
+                            }
+                        });
+                    });
+                }).catch(function () {});
             });
         }
     </script>
