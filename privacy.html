@@ -13,8 +13,8 @@
     <style>
         /*
          * Colors are the DEFAULT palette literals from
-         * shared/ui/theme/ThemePalettes.kt, the same set index.html freezes
-         * for its loader (background, onBackground, onSurfaceVariant,
+         * core/ui/.../core/ui/theme/ThemePalettes.kt, the same set index.html
+         * freezes for its loader (background, onBackground, onSurfaceVariant,
          * outlineVariant, primary, onPrimary). Keep them in sync.
          */
         :root {
@@ -23,7 +23,7 @@
             --text: #1A1B21;
             --muted: #45464F;
             --line: #C6C5D0;
-            --link: #3D4ED8;
+            --link: #3C4DD7;
             --on-primary: #FFFFFF;
         }
         @media (prefers-color-scheme: dark) {
@@ -32,8 +32,8 @@
                 --text: #E3E1E9;
                 --muted: #C6C5D0;
                 --line: #45464F;
-                --link: #BBC3FF;
-                --on-primary: #00209C;
+                --link: #BCC2FF;
+                --on-primary: #00169D;
             }
         }
         * { box-sizing: border-box; }
@@ -174,17 +174,17 @@
     <section lang="ru">
         <div class="callout">
             <p><strong>Коротко: KPuzzle не собирает, не обрабатывает и не передаёт
-            никакие персональные данные. Приложение полностью оффлайн.</strong></p>
+            никакие персональные данные. Приложение полностью офлайн.</strong></p>
         </div>
 
         <h2>Сбор данных отсутствует</h2>
-        <p>В KPuzzle нет аккаунтов, аналитики, рекламы, трекеров и cookie-файлов. Мы
+        <p>В KPuzzle нет аккаунтов, аналитики, рекламы, трекеров и файлов cookie. Мы
         не собираем, не храним и не передаём никакую личную информацию.</p>
 
-        <h2>Полностью оффлайн</h2>
+        <h2>Полностью офлайн</h2>
         <p>Головоломки генерируются и решаются на вашем устройстве. Прогресс, настройки
         и статистика сохраняются только локально на вашем устройстве — в локальном
-        хранилище браузера для веб-версии или в закрытом хранилище приложения на других
+        хранилище браузера для веб-версии или во внутреннем хранилище приложения на других
         платформах. Эти данные не покидают устройство и никуда не отправляются.
         Очистка данных приложения (или данных сайта в браузере) удаляет их
         безвозвратно.</p>
@@ -202,7 +202,10 @@
     </section>
 
     <footer>
-        <a href="./">&larr; Play KPuzzle</a>
+        <a href="./">
+            <span lang="en" class="t-en">&larr; Play KPuzzle<span class="sep" aria-hidden="true"> &middot; </span></span>
+            <span lang="ru" class="t-ru">&larr; Играть в KPuzzle</span>
+        </a>
     </footer>
 </main>
 <script type="application/javascript">
