@@ -163,10 +163,10 @@
         },
         {
             "uniqueId": "androidx.collection:collection",
-            "artifactVersion": "1.7.0",
+            "artifactVersion": "1.6.0",
             "name": "collections",
             "description": "Standalone efficient collections.",
-            "website": "https://developer.android.com/jetpack/androidx/releases/collection#1.7.0",
+            "website": "https://developer.android.com/jetpack/androidx/releases/collection#1.6.0",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -180,10 +180,10 @@
         },
         {
             "uniqueId": "androidx.collection:collection-ktx",
-            "artifactVersion": "1.7.0",
+            "artifactVersion": "1.6.0",
             "name": "Collections Kotlin Extensions",
             "description": "Kotlin extensions for 'collection' artifact",
-            "website": "https://developer.android.com/jetpack/androidx/releases/collection#1.7.0",
+            "website": "https://developer.android.com/jetpack/androidx/releases/collection#1.6.0",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1306,27 +1306,10 @@
         },
         {
             "uniqueId": "androidx.tracing:tracing",
-            "artifactVersion": "2.0.5",
+            "artifactVersion": "2.0.1",
             "name": "Tracing",
             "description": "Android Tracing",
-            "website": "https://developer.android.com/jetpack/androidx/releases/tracing#2.0.5",
-            "organization": {
-                "name": "The Android Open Source Project"
-            },
-            "scm": {
-                "connection": "scm:git:https://android.googlesource.com/platform/frameworks/support",
-                "url": "https://cs.android.com/androidx/platform/frameworks/support"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "androidx.tracing:tracing-ktx",
-            "artifactVersion": "2.0.5",
-            "name": "Tracing Kotlin Extensions",
-            "description": "Android Tracing",
-            "website": "https://developer.android.com/jetpack/androidx/releases/tracing#2.0.5",
+            "website": "https://developer.android.com/jetpack/androidx/releases/tracing#2.0.1",
             "organization": {
                 "name": "The Android Open Source Project"
             },
@@ -1696,51 +1679,6 @@
                 "connection": "scm:git:git://github.com/square/okio.git",
                 "developerConnection": "scm:git:ssh://git@github.com/square/okio.git",
                 "url": "https://github.com/square/okio/"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "dev.chrisbanes.haze:haze",
-            "artifactVersion": "2.1.0",
-            "name": "Haze",
-            "description": "Haze",
-            "website": "https://github.com/chrisbanes/haze/",
-            "scm": {
-                "connection": "scm:git:git://github.com/chrisbanes/haze.git",
-                "developerConnection": "scm:git:git://github.com/chrisbanes/haze.git",
-                "url": "https://github.com/chrisbanes/haze/"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "dev.chrisbanes.haze:haze-blur",
-            "artifactVersion": "2.1.0",
-            "name": "Haze Blur",
-            "description": "Haze",
-            "website": "https://github.com/chrisbanes/haze/",
-            "scm": {
-                "connection": "scm:git:git://github.com/chrisbanes/haze.git",
-                "developerConnection": "scm:git:git://github.com/chrisbanes/haze.git",
-                "url": "https://github.com/chrisbanes/haze/"
-            },
-            "licenses": [
-                "Apache-2.0"
-            ]
-        },
-        {
-            "uniqueId": "dev.chrisbanes.haze:haze-utils",
-            "artifactVersion": "2.1.0",
-            "name": "Haze Utils",
-            "description": "Common utilities for the Haze library",
-            "website": "https://github.com/chrisbanes/haze/",
-            "scm": {
-                "connection": "scm:git:git://github.com/chrisbanes/haze.git",
-                "developerConnection": "scm:git:git://github.com/chrisbanes/haze.git",
-                "url": "https://github.com/chrisbanes/haze/"
             },
             "licenses": [
                 "Apache-2.0"
